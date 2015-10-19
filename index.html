@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GuitHub</title>
+  <!-- Fonts used for header and body -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/guithub.css">
+  <!-- Javascript -->
+  <script type="text/javascript" src="scripts/pixi.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+  <!-- Header, with Unicode character for guitar -->
+    <div id="header">
+      <h1>&#127928;GuitHub</h1>
+    </div>
+
+    <div id="body">
+      <!-- Form to select root note, scale type, etc -->
+      <div class="form">
+        <form id="options">
+          <fieldset>
+            <label for="root">Root Note</label>
+            <br>
+            <select id="root">
+              <option value="A">A</option>
+              <option value="A#">A#</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="C#">C#</option>
+              <option value="D">D</option>
+              <option value="D#">D#</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="F#">F#</option>
+              <option value="G">G</option>
+              <option value="G#">G#</option>
+            </select>
+            <br>
+            <label for="tonality">Tonality</label>
+            <br>
+            <select id="tonality">
+              <option value="major">Major</option>
+              <option value="minor">Minor</option>
+              <option value="dorian">Dorian</option>
+              <option value="mixolydian">Mixolydian</option>
+            </select>
+            <br>
+            <button type="button" id="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      <br>
+      <div id="canvas"></div>
+      <div id="instructions">
+        <p>Use number keys <b>1</b> through <b>7</b> to toggle chord highlighting, <b>0</b> to show all notes in scale.</p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>
+        <a href="https://github.com/cnasc/guithub">Check Out GuitHub on GitHub!</a>
+        <br>
+        <i>GuitHub is not affiliated with GitHub, Inc. in any way.</i>
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/guithub.js"></script>
+</body>
+
+</html>
